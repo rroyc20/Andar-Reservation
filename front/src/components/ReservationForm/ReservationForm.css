@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Segoe UI, Tahoma, sans-serif;
+}
+
+.Sample input,
+.Sample button {
+    font: inherit;
+}
+
+.Sample header {
+    background-color: #323639;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+}
+
+.Sample header h1 {
+    font-size: inherit;
+    margin: 0;
+}
+
+.Sample__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.Sample__container > * > * {
+    margin: 10px;
+}
+
+.Sample__container__content {
+    display: flex;
+    max-width: 100%;
+    flex-basis: 420px;
+    flex-direction: column;
+    flex-grow: 100;
+    align-items: stretch;
+    padding-top: 1em;
+}
+
+.Sample__container__content .react-calendar {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.TimeSlots {
+    display: flex;
+    width: 100%;
+    height: 50px; /* Adjust the height as needed */
+}
+
+.TimeSlot {
+    flex: 1;
+    border: 1px solid #ccc;
+    position: relative; /* Add position relative to the TimeSlot */
+}
+
+.TimeSlot__text {
+    position: absolute; /* Position the text absolutely */
+    top: 0; /* Place the text at the top */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+    font-size: 12px;
+    padding: 2px;
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.8
+    ); /* Add background color for better visibility */
+}
+
+.TimeSlot.reserved {
+    background-color: green;
+}
+.TimeSlot.selected {
+    background-color: grey; /* Change the background color of selected slots */
+}
