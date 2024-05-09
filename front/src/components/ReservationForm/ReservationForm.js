@@ -53,7 +53,7 @@ function ReservationForm() {
     return (
         <div className="Sample">
             <header>
-                <h1>Reservation Form</h1>
+                <h1>Andar</h1>
             </header>
             <div className="Sample__container">
                 <main className="Sample__container__content">
